@@ -110,7 +110,7 @@ header nav ul li a {
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 20px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
@@ -431,4 +431,47 @@ footer {
     padding: 20px;
     background-color: #5d00f2;
     color: #fff;
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .service-container, .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service, .team-member {
+        width: 90%; /* Take up more space on smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .service-container {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        font-size: 14px;
+    }
 }
