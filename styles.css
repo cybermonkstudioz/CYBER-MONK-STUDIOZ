@@ -31,10 +31,7 @@ header nav ul {
     list-style-type: none;
     flex-wrap: wrap;
     padding: 10px 0;
-}
-
-header nav ul li {
-    margin-left: 20px;
+    gap: 20px; /* Add gap between list items */
 }
 
 header nav ul li a {
@@ -52,12 +49,14 @@ header nav ul li a {
     header nav ul {
         justify-content: center;
         padding: 10px;
+        gap: 10px; /* Reduce gap for smaller screens */
     }
 
     header nav ul li {
         margin: 10px 0;
     }
 }
+
 
 
 /* Hero Section */
