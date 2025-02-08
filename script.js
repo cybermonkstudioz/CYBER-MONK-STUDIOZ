@@ -27,6 +27,14 @@ document.getElementById("booking-form").addEventListener("submit", function (eve
     document.getElementById("booking-form").reset();
 });
 
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+
 // Chatbot functionality
 function openChat() {
     document.getElementById("chatbot").style.display = "block";

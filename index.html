@@ -15,16 +15,18 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header>
-        <nav>
-            <div class="logo">Cyber Monk Studioz</div>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Our Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#CyberMonkStudioz">Cyber Monk Studioz</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#apply-classes">Apply for Cyber Classes</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </nav>
+</header>
     
     <!-- Hero Section -->
     <section class="hero">
@@ -207,6 +209,43 @@
     </form>
 </section>
 
+<!-- Divider -->
+<hr class="section-divider">
+
+
+<!-- Form Section -->
+<section id="apply-classes">
+    <h2>Apply for Cyber Classes</h2>
+    <form action="https://formspree.io/f/xldglpjn" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+  
+      <label for="role">Select a Role:</label>
+      <select id="role" name="role" required>
+        <option value="">None</option>
+        <option value="Graphic Designing">Graphic Designing</option>
+        <option value="Video Editing">Video Editing</option>
+        <option value="Photo Editing">Photo Editing</option>
+        <option value="Website Designing">Website Designing</option>
+        <option value="App Designing">App Designing</option>
+        <option value="Photography">Photography</option>
+        <option value="Videography">Videography</option>
+        <option value="Script Writing">Script Writing</option>
+        <option value="Copy Writing">Copy Writing</option>
+        <option value="Content Creation">Content Creation</option>
+        <option value="Music Composing">Music Composing</option>
+        <option value="Hosting/Anchoring">Hosting/Anchoring</option>
+        <option value="Comic Direction">Comic Direction</option>
+        <option value="Comic Sketch Artist">Comic Sketch Artist</option>
+      </select>
+  
+      <button type="submit">Apply Now</button>
+    </form>
+  </section>
+  
 
     
     <!-- Contact Section -->

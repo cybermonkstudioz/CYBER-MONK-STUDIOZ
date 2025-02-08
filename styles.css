@@ -1,15 +1,56 @@
-/* General Styles */
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff5c3; /* Soft yellow background */
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background: #ff0062;
+    padding: 10px 20px;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+  }
+  
+  h2 {
     color: #333;
-}
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
 
 /* Header Styles */
 header {
@@ -369,13 +410,104 @@ button[type="submit"]:hover {
   background-color: #005f7a;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  form {
-    padding: 20px;
-  }
+/* Divider Style */
+.section-divider {
+    height: 20px; /* Increase thickness */
+    background: #007bff; /* Vibrant pink color */
+    border: none;
+    margin: 40px 0;
 }
 
+  
+
+/* Form Section Styling */
+#apply-classes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 40px 20px;
+  }
+  
+  form {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #ff0062;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  form button:hover {
+    background-color: #e50055;
+  }
+  
+/* Apply for Cyber Classes in Pink */
+#apply-classes h2 {
+    color: #ff0062; /* Vibrant pink */
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+/* Contact Us in White */
+.contact h2 {
+    color: #ffffff;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #ff0062;
+      width: 100%;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    form {
+      max-width: 100%;
+    }
+  }
+  
 
 
 /* Contact Section */
