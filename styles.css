@@ -13,7 +13,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #ff0062; /* Bright yellow */
+    background-color: #ff0062;
     padding: 20px;
     color: #fff;
 }
@@ -23,13 +23,13 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Ensure content wraps on small screens */
+    flex-wrap: wrap;
 }
 
 header nav ul {
     display: flex;
     list-style-type: none;
-    flex-wrap: wrap; /* Allow menu items to wrap on small screens */
+    flex-wrap: wrap;
     padding: 10px 0;
 }
 
@@ -58,6 +58,7 @@ header nav ul li a {
         margin: 10px 0;
     }
 }
+
 
 /* Hero Section */
 .hero {
