@@ -7,7 +7,6 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     background-color: #f9f9f9;
   }
   
@@ -21,6 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   
   .nav-links {
@@ -45,10 +45,41 @@
     color: white;
   }
   
-  h2 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #ff0062;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      z-index: 1;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-links a {
+      font-size: 18px;
+    }
   }
   
 
@@ -102,6 +133,44 @@ header nav ul li a {
     }
 }
 
+/* Hamburger Menu Styling */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #ff0062;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
 
 
 /* Hero Section */
